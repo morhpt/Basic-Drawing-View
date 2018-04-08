@@ -35,7 +35,7 @@ class DrawingView(ctx: Context) : View(ctx), AnkoLogger {
     var style: Paint.Style
         get() = mPaint.style
         set(w) {
-            mPaint.style = Paint.Style.STROKE
+            mPaint.style = w
         }
     var isAntiAlias: Boolean
         get() = mPaint.isAntiAlias

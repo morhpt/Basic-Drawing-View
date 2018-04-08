@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'org.jetbrains.dokka'
 
 ext {
-    bintrayRepo = 'Basic-Drawing-View'
+    bintrayRepo = 'maven'
     bintrayName = 'Basic-Drawing-View'
 
     publishedGroupId = 'com.morhpt.drawingview'
