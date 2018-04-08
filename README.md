@@ -4,7 +4,7 @@ Drawing view library for Android
   
 ### Screenshots
 
-![ss0](screenshots/ss0.png  | width=200)  
+<img src="https://raw.githubusercontent.com/morhpt/Basic-Drawing-View/master/screenshots/ss0.png" width="360">
   
 ### Installation    
  Maven:  
