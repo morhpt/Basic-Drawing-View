@@ -30,7 +30,3 @@ licenses:
   - android-sdk-preview-license-.+
   - android-sdk-license-.+
   - google-gdk-license-.+
-
-checkout:
-  post:
-    - cp local.properties.ci local.properties
