@@ -8,6 +8,9 @@ android:
     - build-tools-27.1.1
     - android-27
 
+before_install:
+  - yes | sdkmanager "platforms;android-27"
+
 licenses:
     - 'android-sdk-preview-license-.+'
     - 'android-sdk-license-.+'
