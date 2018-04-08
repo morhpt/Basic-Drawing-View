@@ -4,7 +4,7 @@ Drawing view library for Android
   
 ### Screenshots
 
-![ss0](screenshots/ss0.png = 200x)  
+![ss0](screenshots/ss0.png  | width=200)  
   
 ### Installation    
  Maven:  
