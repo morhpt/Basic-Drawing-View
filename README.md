@@ -1,5 +1,5 @@
 
-  [![Build Status](https://travis-ci.org/morhpt/Basic-Drawing-View.svg?branch=master)](https://travis-ci.org/morhpt/Basic-Drawing-View) [![Dependency Status](https://www.versioneye.com/user/projects/5ac9a96e0fb24f39bed6dd2c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5ac9a96e0fb24f39bed6dd2c) [![license](https://img.shields.io/github/license/morhpt/Basic-Drawing-View.svg)](https://github.com/morhpt/Basic-Drawing-View/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/morhpt/Basic-Drawing-View.svg?branch=master)](https://travis-ci.org/morhpt/Basic-Drawing-View) [![Dependency Status](https://www.versioneye.com/user/projects/5ac9a96e0fb24f39bed6dd2c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5ac9a96e0fb24f39bed6dd2c)  [![license](https://img.shields.io/github/license/morhpt/Basic-Drawing-View.svg)](https://github.com/morhpt/Basic-Drawing-View/blob/master/LICENSE)
 
 # Android Basic Drawing View   
 Drawing view library for Android    
