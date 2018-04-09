@@ -4,67 +4,67 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'org.jetbrains.dokka'
 
-//ext {
-//    bintrayRepo = 'maven'
-//    bintrayName = 'Basic-Drawing-View'
-//
-//    publishedGroupId = 'com.morhpt.drawingview'
-//    libraryName = 'DrawingView'
-//    artifact = 'drawingview'
-//
-//    libraryDescription = 'Drawing view library for Android'
-//
-//    siteUrl = 'https://github.com/morhpt/Basic-Drawing-View'
-//    gitUrl = 'https://github.com/morhpt/Basic-Drawing-View.git'
-//
-//    libraryVersion = '1.0.0'
-//
-//    developerId = 'morhpt'
-//    developerName = 'Burak Taban'
-//    developerEmail = 'burak.taban.22@gmail.com'
-//
-//    licenseName = 'The MIT License'
-//    licenseUrl = 'https://opensource.org/licenses/MIT'
-//    allLicenses = ["MIT"]
-//}
-//
-//dokka {
-//    outputFormat = 'html'
-//    outputDirectory = "$buildDir/javadoc"
-//}
-//
-//tasks.withType(Javadoc).all { enabled = false }
-//
-//android {
-//    compileSdkVersion 27
-//
-//
-//    defaultConfig {
-//        minSdkVersion 14
-//        targetSdkVersion 27
-//        versionCode 1
-//        versionName "1.0"
-//
-//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-//
-//    }
-//
-//    buildTypes {
-//        release {
-//            postprocessing {
-//                removeUnusedCode false
-//                removeUnusedResources false
-//                obfuscate false
-//                optimizeCode false
-//                proguardFile 'proguard-rules.pro'
-//            }
-//        }
-//    }
-//
-//    lintOptions {
-//        abortOnError false
-//    }
-//}
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Basic-Drawing-View'
+
+    publishedGroupId = 'com.morhpt.drawingview'
+    libraryName = 'DrawingView'
+    artifact = 'drawingview'
+
+    libraryDescription = 'Drawing view library for Android'
+
+    siteUrl = 'https://github.com/morhpt/Basic-Drawing-View'
+    gitUrl = 'https://github.com/morhpt/Basic-Drawing-View.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'morhpt'
+    developerName = 'Burak Taban'
+    developerEmail = 'burak.taban.22@gmail.com'
+
+    licenseName = 'The MIT License'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
+
+dokka {
+    outputFormat = 'html'
+    outputDirectory = "$buildDir/javadoc"
+}
+
+tasks.withType(Javadoc).all { enabled = false }
+
+android {
+    compileSdkVersion 27
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
 
 repositories {
     mavenCentral()
@@ -91,5 +91,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+}
