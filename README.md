@@ -44,7 +44,7 @@ val drawingView = findViewById<DrawingView>(R.id.drawingView)
 #### Kotlin DSL  
   
 ```kotlin  
-lateinit var drawView: DrawingView
+lateinit var mDrawingView: DrawingView
 
 drawingView {
 	drawView = this
@@ -55,57 +55,57 @@ drawingView {
 
 To get and set stroke size:
 ```kotlin
-drawView.stroke // returns float value
-drawView.stroke = 15f
+mDrawingView.stroke // returns float value
+mDrawingView.stroke = 15f
 ```
 
 To get and set color:
 ```kotlin
-drawView.color // returns int value
-drawView.color = Color.RED
+mDrawingView.color // returns int value
+mDrawingView.color = Color.RED
 ```
 
 To get and set style:
 ```kotlin
-drawView.style // returns Paint.Style value
-drawView.style = Paint.Style.STROKE
+mDrawingView.style // returns Paint.Style value
+mDrawingView.style = Paint.Style.STROKE
 ```
 
 To get and set anti alias
 ```kotlin
-drawView.isAntiAlias // returns boolean value
-drawView.isAntiAlias = true
+mDrawingView.isAntiAlias // returns boolean value
+mDrawingView.isAntiAlias = true
 ```
 
 To get and set stroke join
 ```kotlin
-drawView.strokeJoin // returns Paint.Join value
-drawView.strokeJoin = Paint.Join.ROUND
+mDrawingView.strokeJoin // returns Paint.Join value
+mDrawingView.strokeJoin = Paint.Join.ROUND
 ```
 
 To get bitmap of the view
 ```kotlin
-drawView.bitmap // returns bitmap
+mDrawingView.bitmap // returns bitmap
 ```
 
 To set pixel or create a rectangle on a specific location
 ```kotlin
-drawView.setPixel(10f, 10f, false, true, RectF(x, y, x + 0.1f, y + 0.1f))
+mDrawingView.setPixel(10f, 10f, false, true, RectF(x, y, x + 0.1f, y + 0.1f))
 ```
 
 To refresh the view
 ```kotlin
-drawView.refresh()
+mDrawingView.refresh()
 ```
 
 To force refresh the view
 ```kotlin
-drawView.hardRefresh()
+mDrawingView.hardRefresh()
 ```
 
 To clear the canvas
 ```kotlin
-drawView.clearCanvas()
+mDrawingView.clearCanvas()
 ```
 
 ## Licensing  
