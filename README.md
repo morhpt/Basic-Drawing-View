@@ -12,16 +12,16 @@ Drawing view library for Android
  Maven:  
 ```xml  
 <dependency>  
-	<groupId>com.morhpt.drawingview</groupId> 
-	<artifactId>drawingview</artifactId> 
-	<version>1.0.0</version> 
-	<type>pom</type>
+    <groupId>com.morhpt.drawingview</groupId>
+    <artifactId>drawingview</artifactId>
+    <version>1.0.6</version>
+    <type>pom</type>
 </dependency>  
 ```  
   
 Gradle:  
 ```gradle  
-implementation 'com.morhpt.drawingview:drawingview:1.0.0'  
+implementation 'com.morhpt.drawingview:drawingview:1.0.6'
 ```  
   
 ### Usage  

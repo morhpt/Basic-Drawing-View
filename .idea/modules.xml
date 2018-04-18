@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BasicDrawingView.iml" filepath="$PROJECT_DIR$/BasicDrawingView.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/app.iml" filepath="$PROJECT_DIR$/sample/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/drawingview/drawingview.iml" filepath="$PROJECT_DIR$/drawingview/drawingview.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/drawingview.iml" filepath="$PROJECT_DIR$/library/drawingview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>

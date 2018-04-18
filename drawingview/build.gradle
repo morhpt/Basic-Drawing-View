@@ -4,12 +4,18 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'org.jetbrains.dokka'
 
+apply plugin: 'com.jfrog.bintray'
+
+apply plugin: 'maven-publish'
+
+version '1.0.6'
+
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'Basic-Drawing-View'
+    bintrayName = 'BasicDrawingView'
 
     publishedGroupId = 'com.morhpt.drawingview'
-    libraryName = 'DrawingView'
+    libraryName = 'BasicDrawingView'
     artifact = 'drawingview'
 
     libraryDescription = 'Drawing view library for Android'
@@ -17,7 +23,7 @@ ext {
     siteUrl = 'https://github.com/morhpt/Basic-Drawing-View'
     gitUrl = 'https://github.com/morhpt/Basic-Drawing-View.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = this.version
 
     developerId = 'morhpt'
     developerName = 'Burak Taban'
@@ -26,6 +32,14 @@ ext {
     licenseName = 'The MIT License'
     licenseUrl = 'https://opensource.org/licenses/MIT'
     allLicenses = ["MIT"]
+}
+
+publishing {
+    publications {
+        Production(MavenPublication) {
+            version this.version
+        }
+    }
 }
 
 dokka {
@@ -42,8 +56,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName this.version
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
