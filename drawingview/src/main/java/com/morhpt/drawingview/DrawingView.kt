@@ -162,19 +162,13 @@ class DrawingView(ctx: Context) : View(ctx), AnkoLogger {
         val x = event.x
         val y = event.y
         when (event.action) {
-            0 -> {
-                startTouch(x, y)
-                invalidate()
-            }
-            1 -> {
-                upTouch()
-                invalidate()
-            }
-            2 -> {
-                moveTouch(x, y)
-                invalidate()
-            }
+            MotionEvent.ACTION_DOWN -> startTouch(x, y)
+            MotionEvent.ACTION_UP,
+            MotionEvent.ACTION_CANCEL -> upTouch()
+            MotionEvent.ACTION_MOVE -> moveTouch(x, y)
+            else -> return true
         }
+        invalidate()
         return true
     }
 
